@@ -1,0 +1,23 @@
+{
+  "app": {
+    "title": "Efemèrides Històriques"
+  },
+  "loading": {
+    "message": "Carregant efemèride...",
+    "details": "Carregant..."
+  },
+  "error": {
+    "message": "No s'ha pogut carregar l'efemèride",
+    "retry": "Tornar a intentar",
+    "loadingDetails": "No s'han pogut carregar els detalls"
+  },
+  "actions": {
+    "nextEvent": "Següent efemèride",
+    "moreInfo": "Més informació",
+    "lessInfo": "Menys informació"
+  },
+  "footer": {
+    "source": "Font de dades: Wikipedia",
+    "license": "Projecte educatiu · 2026"
+  }
+}

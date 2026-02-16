@@ -1,0 +1,23 @@
+{
+  "app": {
+    "title": "Historical Ephemeris"
+  },
+  "loading": {
+    "message": "Loading ephemeris...",
+    "details": "Loading..."
+  },
+  "error": {
+    "message": "Could not load ephemeris",
+    "retry": "Retry",
+    "loadingDetails": "Could not load details"
+  },
+  "actions": {
+    "nextEvent": "Next ephemeris",
+    "moreInfo": "More information",
+    "lessInfo": "Less information"
+  },
+  "footer": {
+    "source": "Data source: Wikipedia",
+    "license": "Educational project · 2026"
+  }
+}

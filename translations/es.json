@@ -1,0 +1,23 @@
+{
+  "app": {
+    "title": "Efemérides Históricas"
+  },
+  "loading": {
+    "message": "Cargando efeméride...",
+    "details": "Cargando..."
+  },
+  "error": {
+    "message": "No se ha podido cargar la efeméride",
+    "retry": "Reintentar",
+    "loadingDetails": "No se han podido cargar los detalles"
+  },
+  "actions": {
+    "nextEvent": "Siguiente efeméride",
+    "moreInfo": "Más información",
+    "lessInfo": "Menos información"
+  },
+  "footer": {
+    "source": "Fuente de datos: Wikipedia",
+    "license": "Proyecto educativo · 2026"
+  }
+}

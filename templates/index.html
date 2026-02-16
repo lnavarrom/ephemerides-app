@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efemèrides Històriques</title>
+
+    <!-- Fonts vintage de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Crimson+Text:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- Estils -->
+    <link rel="stylesheet" href="/static/css/vintage.css">
+    <link rel="stylesheet" href="/static/css/responsive.css">
+</head>
+<body>
+    <!-- Header amb selector d'idioma -->
+    <header class="app-header">
+        <div class="container">
+            <h1 class="app-title" data-i18n="app.title">Efemèrides Històriques</h1>
+            <nav class="language-selector" aria-label="Language selector">
+                <button class="lang-btn active" data-lang="ca" aria-label="Català">CA</button>
+                <button class="lang-btn" data-lang="es" aria-label="Castellano">ES</button>
+                <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="app-main">
+        <div class="container">
+            <!-- Data del dia -->
+            <section class="date-display">
+                <div class="ornament ornament-left"></div>
+                <time id="current-date" class="current-date"></time>
+                <div class="ornament ornament-right"></div>
+            </section>
+
+            <!-- Card de l'efemèride -->
+            <article class="ephemeris-card" id="ephemeris-card">
+                <!-- Loading state -->
+                <div class="loading-state" id="loading-state">
+                    <div class="spinner"></div>
+                    <p data-i18n="loading.message">Carregant efemèride...</p>
+                </div>
+
+                <!-- Error state -->
+                <div class="error-state hidden" id="error-state">
+                    <p class="error-message" data-i18n="error.message">No s'ha pogut carregar l'efemèride</p>
+                    <button class="btn btn-secondary" id="retry-btn" data-i18n="error.retry">Tornar a intentar</button>
+                </div>
+
+                <!-- Content state -->
+                <div class="ephemeris-content hidden" id="ephemeris-content">
+                    <div class="year-badge" id="year-badge">1492</div>
+                    <p class="ephemeris-text" id="ephemeris-text"></p>
+
+                    <!-- Expanded details -->
+                    <div class="ephemeris-details hidden" id="ephemeris-details">
+                        <div class="details-divider"></div>
+                        <div class="details-content">
+                            <img id="details-thumbnail" class="details-thumbnail hidden" src="" alt="">
+                            <p id="details-description" class="details-description"></p>
+                            <div id="details-links" class="details-links"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Action buttons -->
+            <div class="action-buttons">
+                <button class="btn btn-primary" id="next-btn" disabled>
+                    <span data-i18n="actions.nextEvent">Següent efemèride</span>
+                </button>
+                <button class="btn btn-secondary" id="details-btn" disabled>
+                    <span data-i18n="actions.moreInfo">Més informació</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+        <div class="container">
+            <p data-i18n="footer.source">Font de dades: Wikipedia</p>
+            <p data-i18n="footer.license">Projecte educatiu · 2026</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/static/js/i18n.js"></script>
+    <script src="/static/js/api-client.js"></script>
+    <script src="/static/js/animations.js"></script>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

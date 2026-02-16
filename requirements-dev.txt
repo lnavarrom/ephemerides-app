@@ -1,0 +1,19 @@
+# Testing dependencies
+pytest==7.4.3
+pytest-bdd==6.1.1
+pytest-cov==4.1.0
+pytest-flask==1.3.0
+pytest-mock==3.12.0
+
+# E2E testing
+selenium==4.16.0
+webdriver-manager==4.0.1
+
+# Code quality
+pylint==3.0.3
+black==23.12.1
+flake8==7.0.0
+
+# Mocking and fixtures
+responses==0.24.1
+faker==21.0.0
