@@ -1,7 +1,7 @@
 # Efemèrides Històriques
 
-[![Tests](https://github.com/USERNAME/ephemerides-app/workflows/Tests/badge.svg)](https://github.com/USERNAME/ephemerides-app/actions)
-[![codecov](https://codecov.io/gh/USERNAME/ephemerides-app/branch/main/graph/badge.svg)](https://codecov.io/gh/USERNAME/ephemerides-app)
+[![Tests](https://github.com/lnavarrom/ephemerides-app/workflows/Tests/badge.svg)](https://github.com/lnavarrom/ephemerides-app/actions)
+[![codecov](https://codecov.io/gh/lnavarrom/ephemerides-app/branch/main/graph/badge.svg)](https://codecov.io/gh/lnavarrom/ephemerides-app)
 [![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -212,7 +212,7 @@ Aquest projecte utilitza GitHub Actions per executar tests automàticament:
 - **Cobertura de codi**: 91% cobertura amb pytest-cov
 - **Python 3.12**: Tests executats amb l'última versió de Python
 
-Per veure l'estat dels tests, consulta la pestanya [Actions](https://github.com/USERNAME/ephemerides-app/actions) del repositori.
+Per veure l'estat dels tests, consulta la pestanya [Actions](https://github.com/lnavarrom/ephemerides-app/actions) del repositori.
 
 ## Troubleshooting
 
