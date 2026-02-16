@@ -4,7 +4,7 @@ from datetime import datetime
 class Config:
     # Flask config
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'dev-secret-key-change-in-production'
-    DEBUG = True
+    DEBUG = os.environ.get('FLASK_ENV') != 'production'
 
     # Wikipedia API
     WIKIPEDIA_API_BASE = 'https://{lang}.wikipedia.org/api/rest_v1/feed/onthisday/{type}/{month:02d}/{day:02d}'
